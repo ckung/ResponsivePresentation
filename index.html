@@ -21,9 +21,8 @@
         When creating your own presentation get rid of this file. Start from scratch, it's fun!
 
         -->
-    
         <link href="css/reset.css" rel="stylesheet" />
-            <link href="css/impress-demo.css" rel="stylesheet" />
+        <link href="css/impress-demo.css" rel="stylesheet" />
     </head>
     <body class="impress-not-supported">
         <div class="fallback-message">
@@ -136,13 +135,13 @@
             down (4 times) to make it back to it's correct size.
 
             -->
-            <div id="sass" class="step" data-x="-1000" data-y="1500" data-rotate="90" data-scale="5">
+            <div id="sass" class="step" data-x="-1000" data-y="2500" data-rotate="90" data-scale="5">
                 <p>
                     But lets briefly
-                    talk about
+                    talk about    <a href="http://sass-lang.com/" class= "yellowish"> SASS</a>
                 </p>
-                <a href="http://sass-lang.com/" class= "yellowish">
-                    SASS</a>
+             
+                <img src="http://pull.imgfave.netdna-cdn.com/image_cache/1310405925499062.jpg"/>
             </div>
             <!--
 
@@ -152,24 +151,28 @@
             element should be rotated by 90 degrees clockwise.
 
             -->
-            <div id="grid" class="step" data-x="-1500" data-y="-3000" data-scale="1">
+            <div id="grid" class="step" data-x="-1000" data-y="-3000" data-scale="1">
                 <p>
-                    Bajillion gluid grid libraries. We tried Compass SUSY.  Great! Because I don't like math.
+                    Bajillion fluid grid libraries. We tried Compass SUSY.  Great! Because I don't like math.
                 </p>
-                <p>
-                    Dumped it .. too much overhead.
+                <img width='600' src="img/grid.png">
+                <p class="content">
+                    boom. "column" calculates percentages for you.
                 </p>
             </div>
-            <div id="instead" class="step" data-x="2000" data-y="2100" data-rotate="180" data-scale="6">
-                <p>
-                    Imho, grids are perfect for <span class="yellowish">content-heavy websites.</span> But doesn't fit our design.
+            <div id="instead" class="step" data-x="0" data-y="-3000" data-scale="1">
+                <p class="content">
+                    Dumped it .. too much overhead, doesn't really fit our design.
+                </p>
+                <p class="content">
+                    Imho, grids are perfect for <span class="yellowish">content-heavy websites.</span>
                 </p>
                 <p>
-                    Instead ...
+                    Instead use :
                 </p>
                 <ul>
                     <li>
-                        Percentages for width
+                        <a href="http://ckung-dev.laddersoffice.com:8080/#/login">Percentages for width</a>
                     </li>
                     <li>
                         EMs for font and padding
@@ -179,18 +182,23 @@
                     </li>
                 </ul>
             </div>
-            <div id="instead2" class="step" data-x="1400" data-y="6000" data-rotate="180" data-scale="5"></div>
-            <div id="instead3" class="step" data-x="500" data-y="9000" data-rotate="270" data-scale="8"></div>
-            <!--
-
-            And now it gets really exiting! We move into third dimension!
-
-            Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
-            `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
-            positioned far away from us (by 3000px).
-
-            -->
-            <div id="cascade" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+            <div id="em" class="step" data-x="1000" data-y="-3000" data-scale="1">
+                <p>
+                    EM! Use em!
+                </p>
+                <ol>
+                    <li>
+                        Works for IE6 zoom
+                    </li>
+                    <li>
+                        Cascading
+                    </li>
+                    <li>
+                        Works for media query zoom
+                    </li>
+                </ol>
+            </div>
+            <div id="cascade" class="step" data-x="1400" data-y="6000" data-rotate="180" data-scale="5">
                 <p>
                     Ems Cascade
                 </p>
@@ -204,27 +212,37 @@
                     <span class="first">this is 20px <sup>span</sup><span class="second">this is 20px <sup>span</sup><span class="third">this is 20px <sup>span</sup></span></span></span>
                 </div>
             </div>
-            <!--
+            <div id="media" class="step" data-x="-5000" data-y="6000" data-rotate="180" data-scale="6">
+                <p>
+                    Ems in media queries.
+                </p>
+                <img width="800" src = "img/media-query.png"/>
+                *<a href="http://ckung-dev.laddersoffice.com:8080/#/login">demo</a>*
+            </div>
+            <div id="future" class="step" data-x="-5000" data-y="2000" data-rotate="180" data-scale="5">
+                <p>
+                    Future of media queries in SASS 3.2
+                </p>
+                <img width="1200" src = "img/media-query3.png"/>
+            </div>
 
-            This step here doesn't introduce anything new when it comes to data attributes, but you
-            should notice in the demo that some words of this text are being animated.
-            It's a very basic CSS transition that is applied to the elements when this step element is
-            reached.
+            <div id="tweaks" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+                <p>Other methods thus far ...</p>
+                <ul>
+                    <li>
+                        jquery's on touch start
+                    </li>
+                    <li>
+                       modernizer's touch class
+                    </li>
+                    <li>
+                        -webkit-transform: translateZ(0);
+                    </li>
 
-            At the very beginning of the presentation all step elements are given the class of `future`.
-            It means that they haven't been visited yet.
-
-            When the presentation moves to given step `future` is changed to `present` class name.
-            That's how animation on this step works - text moves when the step has `present` class.
-
-            Finally when the step is left the `present` class is removed from the element and `past`
-            class is added.
-
-            So basically every step element has one of three classes: `future`, `present` and `past`.
-            Only one current step has the `present` class.
-
-            -->
-            <div id="challanges" class="step" data-x="3500" data-y="-850" data-rotate="90" data-scale="6">
+                </ul>
+            </div>
+    
+            <div id="challanges" class="step" data-x="3500" data-y="-850" data-rotate="90" data-scale="6" data-rotate="20" >
                 <p>
                     Surprises!
                 </p>
@@ -262,13 +280,14 @@
                     </li>
                 </ul>
             </div>
-            <div id="work" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+            <div id="work" class="step" data-x="13000" data-y="-3000" data-scale="4">
                 <p>
                     Does it work?
                 </p>
-                <div class="content">It's definitely too early to say for sure…. but early findings very good.</div>
-                <span class="content">
-                   Users were able to run through scenarios such as "A recruiter just called you to schedule and interview for a job you applied to last week. Find the job and add the interview" fairly fluidly and naturally. </span>
+                <div class="content">
+                    It's definitely too early to say for sure…. but early findings very good.
+                </div>
+                <span class="content"> Users were able to run through scenarios such as "A recruiter just called you to schedule and interview for a job you applied to last week. Find the job and add the interview" fairly fluidly and naturally. </span>
             </div>
             <div id="endall" class="step" data-x="8000" data-y="4000" data-scale="2">
                 <p>
@@ -300,11 +319,12 @@
             as `data-rotate` (these two are basically aliases).
 
             -->
-            <div id="worth" class="step" data-x="6200" data-y="4300" data-scale="2">
+            <div id="worth" class="step" data-x="8000" data-y="2000" data-scale="2">
                 <p>
                     Is it worth it?
                 </p>
                 <span class="content">Yes. The learning curve is not too steep and the cost after that point is usually minimal. It's definitely way cheaper than designing, building and maintaining separate sites & apps.</span>
+                <img src="http://www.globalanimal.org/wp-content/uploads/2012/04/spcla.jpg"/>
             </div>
             <!--
 

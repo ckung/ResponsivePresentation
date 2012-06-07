@@ -230,6 +230,26 @@ p {
 	margin-left: 150px;
 }
 
+#grid .content {
+	font-size: 30px;
+}
+
+#instead li {
+	list-style-type: square;
+	font-size: 30px;
+	line-height: 60px;
+	margin-left: 60px;
+	
+}
+
+#instead .content {
+	font-size: 40px;
+}
+
+#em ol {
+	font-size: 30px;
+}
+
 #cascade .em {
 	font-size: 16px;
 	margin-bottom: 20px;
@@ -265,6 +285,14 @@ p {
 	font-size: 1.5em;
 }
 
+
+#tweaks li {
+	list-style-type: square;
+	font-size: 30px;
+	line-height: 60px;
+	margin-left: 60px;
+	
+}
 /*
     Second step is nothing special, just a text with a link, so it doesn't need
     any special styling.
@@ -313,7 +341,7 @@ p {
 	list-style-type: square;
 	font-size: 30px;
 	line-height: 60px;
-	
+	margin-left: 60px;	
 }
 
 #work .content {
@@ -328,6 +356,10 @@ p {
 }
 #worth .content{
 	font-size: 30px;
+}
+
+#worth img {
+	margin: 20px 100px;
 }
 
 /*
