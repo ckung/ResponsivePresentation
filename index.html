@@ -73,7 +73,36 @@
                 </div>
                 <img class="responsive-image" src="img/gd_responsive.png" alt="responsive"/>
             </div>
-            <div id = "its" class="step" data-x="0" data-y="-1500">
+            <div id="why" class="step"data-x="0" data-y="-1500" >
+                <p>
+                    Why Responsive ?
+                </p>
+                <span class="content">The most important reason:
+                    <br/>
+                    Users <span class="yellowish">expect</span> their content to follow them from the desktop to their devices. We wanted to provide the <span class="yellowish"> same access and functionality</span> with a very similar experience.</span>
+            </div>
+            <div id="benefits" class="step"  data-x="1000" data-y="-1500" >
+                <p>
+                    Benefits of Responsive
+                    <br>
+                    vs Other Mobile Stratgey
+                </p>
+                <ul>
+                    <li>
+                        No delay between desktop support and mobile support
+                    </li>
+                    <li>
+                        Works on all types of devices, not just a single platform
+                    </li>
+                    <li>
+                        Single code-base means it's easy to maintain feature party between experiences as we develop new features
+                    </li>
+                    <li>
+                        building a fluid site plus fine-tuned control on an element level means a better experience even on desktop (i.e. large monitors as well as devices)
+                    </li>
+                </ul>
+            </div>
+            <div id = "its" class="step" data-x="2000" data-y="-1500">
                 <p>
                     What does responsive mean?
                 </p>
@@ -95,35 +124,6 @@
                     </li>
                 </ul>
             </div>
-            <div id="why" class="step" data-x="1000" data-y="-1500">
-                <p>
-                    Why Responsive ?
-                </p>
-                <span class="content">The most important reason:
-                    <br/>
-                    Users <span class="yellowish">expect</span> their content to follow them from the desktop to their devices. We wanted to provide the <span class="yellowish"> same access and functionality</span> with a very similar experience.</span>
-            </div>
-            <div id="benefits" class="step" data-x="2000" data-y="-1500">
-                <p>
-                    Benefits of Responsive
-                    <br>
-                    vs Other Mobile Stratgey
-                </p>
-                <ul>
-                    <li>
-                        No delay between desktop support and mobile support
-                    </li>
-                    <li>
-                        Works on all types of devices, not just a single platform
-                    </li>
-                    <li>
-                        Single code-base means it's easy to maintain feature party between experiences as we develop new features
-                    </li>
-                    <li>
-                        building a fluid site plus fine-tuned control on an element level means a better experience even on desktop (i.e. large monitors as well as devices)
-                    </li>
-                </ul>
-            </div>
             <!--
 
             This is an example of step element being scaled.
@@ -136,8 +136,10 @@
             -->
             <div id="sass" class="step" data-x="-1000" data-y="2500" data-rotate="90" data-scale="5">
                 <p>
-                    But lets briefly
-                    talk about <a href="http://sass-lang.com/" class= "yellowish"> SASS</a>
+                    But first,
+                    some background
+                    <br/>
+                    <a href="http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32" class= "yellowish"> SASS</a> and media queries.
                 </p>
                 <img src="http://pull.imgfave.netdna-cdn.com/image_cache/1310405925499062.jpg"/>
             </div>
@@ -150,13 +152,10 @@
 
             -->
             <div id="grid" class="step" data-x="-1000" data-y="-3000" data-scale="1">
-                <p>
-                    Bajillion fluid grid libraries. We tried Compass SUSY.  Great! Because I don't like math.
-                </p>
-                <img width='600' src="img/grid.png">
                 <p class="content">
-                    boom. "column" calculates percentages for you.
+                    Bajillion fluid grid libraries. We tried Compass <span class="yellowish">SUSY</span>. Peformed annoying percentage calculation and has built-in support for media query break points.
                 </p>
+                <img width='800' src="img/susy.png">
             </div>
             <div id="instead" class="step" data-x="0" data-y="-3000" data-scale="1">
                 <p class="content">
@@ -173,7 +172,7 @@
                         <a href="http://ckung-dev.laddersoffice.com:8080/#/login">Percentages for width</a>
                     </li>
                     <li>
-                        EMs for font and padding
+                        EMs for font, margin, padding (even positioning!)
                     </li>
                     <li>
                         Media queries when it can't be fluid
@@ -182,7 +181,7 @@
             </div>
             <div id="em" class="step" data-x="1000" data-y="-3000" data-scale="1">
                 <p>
-                    EM! Use em!
+                    EM! Use 'em!
                 </p>
                 <ol>
                     <li>
@@ -219,14 +218,7 @@
                 <p>
                     Ems in media queries.
                 </p>
-                <img width="800" src = "img/media-query.png"/>
                 *<a href="http://ckung-dev.laddersoffice.com:8080/#/login">demo</a>*
-            </div>
-            <div id="future" class="step" data-x="-5000" data-y="2000" data-rotate="180" data-scale="5">
-                <p>
-                    Future of media queries in SASS 3.2
-                </p>
-                <img width="1200" src = "img/media-query3.png"/>
             </div>
             <div id="tweaks" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
                 <p>
@@ -237,7 +229,7 @@
                         jquery's on touch start
                     </li>
                     <li>
-                        modernizer's touch class
+                        modernizer's feature detection
                     </li>
                     <li>
                         -webkit-transform: translateZ(0);
@@ -285,7 +277,13 @@
                     </li>
                 </ul>
             </div>
-            <div id="work" class="step" data-x="13000" data-y="-3000" data-scale="4">
+            <div id="future" class="step" data-x="13000" data-y="-3000" data-scale="4">
+                <p>
+                    What are Signature's rules so far?
+                </p>
+                <img width="800" src = "img/responsive-chart.JPG"/>
+            </div>
+            <div id="work" class="step" data-x="17000" data-y="-3000" data-scale="4">
                 <p>
                     Does it work?
                 </p>
@@ -329,7 +327,6 @@
                     Is it worth it?
                 </p>
                 <span class="content"><span class="yellowish">Yes.</span> The learning curve is not too steep and the cost after that point is usually minimal. It's definitely way cheaper than designing, building and maintaining separate sites & apps.</span>
-               
                 <img src="http://www.globalanimal.org/wp-content/uploads/2012/04/spcla.jpg"/>
             </div>
             <!--
